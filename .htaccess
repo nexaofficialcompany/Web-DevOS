@@ -1,0 +1,36 @@
+# Enable Cache Control - JPEG
+<FilesMatch "\.jpe?g$">
+    <IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresDefault "access plus 1 year"
+    </IfModule>
+    <IfModule mod_headers.c>
+        Header set Cache-Control "public"
+        Header set Last-Modified "Mon, 1 Jan 1970 00:00:00 GMT"
+    </IfModule>
+</FilesMatch>
+
+# Disable Cache Control - All
+<FilesMatch "\.(css|flv|gif|htm|html|ico|js|mp3|mp4|pdf|png|swf|txt)$">
+    <IfModule mod_expires.c>
+        ExpiresActive Off
+    </IfModule>
+    <IfModule mod_headers.c>
+        FileETag None
+        Header unset ETag
+        Header unset Pragma
+        Header unset Cache-Control
+        Header unset Last-Modified
+        Header set Pragma "no-cache"
+        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+        Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
+    </IfModule>
+</FilesMatch>
+
+# HTTPS Only
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:CF-Visitor} !{"scheme":"https"}
+RewriteCond %{REQUEST_URI} !^/api/
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

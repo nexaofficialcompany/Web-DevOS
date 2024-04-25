@@ -7,103 +7,184 @@
     <body>
         <div class="__LoadEffect__" style="display: none;">
             <pre id="__LoadEffectText">
-                Timestamp: 2024-04-24 21:15:37
-                Severity: High
-                Component: Network Intrusion Detection System
-                
-                ALERT! Unauthorized Network Access Detected
-                
-                Description: A breach in the network's perimeter has been flagged by our vigilant Intrusion Detection System (IDS). An unidentified entity has successfully penetrated our defenses and gained unauthorized access to the inner sanctum of our network infrastructure.
-                The breach was stealthily executed under the cover of darkness, reminiscent of a digital ninja slipping past our digital fortress.
-                
-                Further Analysis:
-                - Entry Point: Exploitation of a zero-day vulnerability in the web application firewall (WAF), bypassing its defenses like a skilled lockpicker maneuvering past intricate tumblers.
-                - Traffic Analysis: Anomalous network traffic observed, resembling the clandestine whispers of an undercover operative passing coded messages through encrypted channels.
-                - Potential Objective: Espionage, data theft, or sabotage. The intruder's intentions remain shrouded in mystery, lurking in the shadows like a cyber-phantom haunting our digital corridors.
-                
-                Action Taken:
-                1. Immediate Isolation: Segregation of compromised systems from the rest of the network, creating a virtual quarantine zone to contain the breach and prevent further contamination.
-                2. Intensified Monitoring: Heightened surveillance and real-time monitoring deployed across critical network segments, with cyber sentinels standing ready to intercept any further intrusion attempts.
-                3. Countermeasures Engaged: Intruder detection algorithms activated, akin to unleashing cyber-hounds to sniff out the scent of the trespasser and thwart their advance.
-                
-                Incident Response Steps:
-                - Forensic Investigation: Digital sleuths dispatched to dissect the breach, meticulously tracing the intruder's footsteps through log files, packet captures, and forensic artifacts.
-                - Vulnerability Patching: Swift remediation of the exploited vulnerability, fortifying our defenses and sealing the breach like skilled craftsmen mending a crack in the walls of a medieval castle.
-                - Threat Intelligence Gathering: Collaboration with cybersecurity experts and threat intelligence analysts to profile the attacker and uncover their modus operandi, transforming our network into an impregnable fortress guarded by the wisdom of the ancients.
-                
-                Affected Systems:
-                - Web servers, database clusters, and application servers residing within the breached network segment, now under lockdown to prevent further compromise.
-                - Endpoints and user devices potentially exposed to the infiltrator's reach, requiring thorough inspection and remediation to purge any lurking threats.
-                
-                Recommendation:
-                - Continuous Vigilance: Eternal vigilance is the price of cybersecurity. Maintain a proactive stance against evolving threats, with constant monitoring and regular security assessments.
-                - Adaptive Defense: Embrace a strategy of adaptive defense, blending proactive prevention with rapid detection and response capabilities, ensuring swift and decisive action against any incursion.
-                - Knowledge Sharing: Foster a culture of cybersecurity awareness and knowledge sharing, empowering every member of the organization to serve as a sentinel in our collective defense against digital adversaries.
-                
-                Status: The hunt is on! Our cyber hunters are hot on the trail of the elusive intruder, tracking their digital footprints through the labyrinthine corridors of our network. Updates will follow as the investigation progresses, bringing us one step closer to unmasking the shadowy figure lurking in the darkness of cyberspace.
+[    0.000000] Linux version 5.10.0-12-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.92-1 (2022-01-18)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.10.0-12-amd64 root=UUID=12345678-1234-1234-1234-123456789012 ro quiet
+[    0.000000] x86/fpu: x87 FPU will use FXSAVE
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009f000-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000007ffeffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007fff0000-0x000000007fffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed1ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000087fffffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 3.0.0 present.
+[    0.000000] DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.14.0-2 04/01/2014
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000000] e820: last_pfn = 0x880000 max_arch_pfn = 0x400000000
+[    0.000000] MTRR default type: write-back
+[    0.000000] MTRR fixed ranges enabled:
+[    0.000000]   00000-9FFFF write-back
+[    0.000000]   A0000-BFFFF uncachable
+[    0.000000]   C0000-FFFFF write-protect
+[    0.000000] MTRR variable ranges enabled:
+[    0.000000]   0 base 000000000 mask F80000000 write-back
+[    0.000000]   1 base 080000000 mask FFC000000 uncachable
+[    0.000000]   2 base 090000000 mask FFF000000 uncachable
+[    0.000000]   3 base 0FF000000 mask FFF000000 write-protect
+[    0.000000]   4 base 100000000 mask F80000000 write-back
+[    0.000000]   5 base 180000000 mask FE0000000 write-back
+[    0.000000]   6 disabled
+[    0.000000]   7 disabled
+[    0.000000]   8 disabled
+[    0.000000]   9 disabled
+[    0.000000] PAT configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- UC  
+[    0.000000] e820: last_pfn = 0x7ffef max_arch_pfn = 0x400000000
+[    0.000000] Using GB pages for direct mapping
+[    0.000000] Secure boot disabled
+[    0.000000] ACPI: RSDP 00000000000f05b0 00024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 000000007ffe03e9 0005C (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+[    0.000000] ACPI: FACP 000000007ffdfae1 000F4 (v04 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 000000007ffdfb99 02D48 (v01 BOCHS  BXPCDSDT 00000001 BXPC 00000001)
+[    0.000000] ACPI: FACS 000000007ffdfb99 00040
+[    0.000000] ACPI: APIC 000000007ffdfb81 000D8 (v02 BOCHS BXPCAPIC 00000001 BXPC 00000001)
+[    0.000000] ACPI: HPET 000000007ffdfc59 00038 (v01 BOCHS BXPCHPET 00000001 BXPC 00000001)
+[    0.000000] ACPI: SRAT 000000007ffdfc91 00088 (v01 BOCHS BXPCSRAT 00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 000000007ffdfd19 000D8 (v02 BOCHS BXPCAPIC 00000001 BXPC 00000001)
+[    0.000000] ACPI: SSDT 000000007ffdfdfd 00040 (v01 BOCHS BXPCSSDT 00000001 BXPC 00000001)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x000000087fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x87ffc8000-0x87ffeffff]
+[    0.000000] Zone ranges:
+[    0.000000] DMA [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000] DMA32 [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.000000] Normal empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000] node 0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000] node 0: [mem 0x0000000000100000-0x000000007ffeffff]
+[    0.000000] node 0: [mem 0x0000000100000000-0x000000087fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000087fffffff]
+[    0.000000] On node 0 totalpages: 524271
+[    0.000000] DMA zone: 64 pages used for memmap
+[    0.000000] DMA zone: 22 pages reserved
+[    0.000000] DMA zone: 3998 pages, LIFO batch:0
+[    0.000000] DMA32 zone: 8192 pages used for memmap
+[    0.000000] DMA32 zone: 524288 pages, LIFO batch:63
+[    0.000000] Reserving Intel graphics memory at [mem 0x8c000000-0x8fffffff]
+[    0.000000] ACPI: PM-Timer IO Port: 0x608
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+[    0.000000] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] smpboot: Allowing 8 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x7ffeffff-0x7fffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x88000000-0x87fffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x88000000-0x87fffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x88000000-0x87fffffff]
             
-                [+] Access Complete.
+[+] Access Complete.
             </pre>
             <center>
-                <h1 id="__LoadEffectText2" class="neon" style="display: none;">Web DevOS 1.8.3</h1>
+                <h1 id="__LoadEffectText2" class="neon" style="display: none;">Web DevOS 1.9.3</h1>
             </center>
         </div>
         <div class="content">
             <div class="taskbar">
-                <a class="neon" style="font-size: 15px;">Web DevOS 1.8.3 By Ace (NEXA - DevHolic)</a>
+                <a class="neon" style="font-size: 15px;">Web DevOS 1.9.3 By Ace (NEXA - DevHolic)</a>
             </div>
             <!-- Line 1 -->
             <div class="Applist">
-                <div class="DesktopApp" onclick="Open(this)" target=".Profile">
-                    <img class="Icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg">
+                <div class="DesktopApp" onclick="Open(this)" target="#Profile">
+                    <img class="Icon" src="PDF_file_icon.svg">
                     <p class="Appname">Example1.pdf</p>
                 </div>
-                <div class="DesktopApp" onclick="Open(this)" target=".Profile">
-                    <img class="Icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg">
+                <div class="DesktopApp" onclick="Open(this)" target="#Profile2">
+                    <img class="Icon" src="PDF_file_icon.svg">
                     <p class="Appname">Example2.pdf</p>
                 </div>
             </div>
 
             <!-- Line 2 -->
             <div class="Applist">
-                <div class="DesktopApp"  onclick="Open(this)" target=".Projects">
-                    <img class="Icon" src="https://upload.wikimedia.org/wikipedia/commons/5/59/OneDrive_Folder_Icon.svg">
+                <div class="DesktopApp"  onclick="Open(this)" target="#Projects">
+                    <img class="Icon" src="Folder_Icon.svg">
                     <p class="Appname">ExampleFolder1</p>
                 </div>
             </div>
 
-            <!-- Line 2 -->
-            <div class="Applist">
-                <div class="DesktopApp"  onclick="Open(this)" target=".Projects">
-                    <img class="Icon" src="https://upload.wikimedia.org/wikipedia/commons/5/59/OneDrive_Folder_Icon.svg">
-                    <p class="Appname">ExampleFolder2</p>
-                </div>
-            </div>
-
             <!-- Profile -->
-            <div id="WinFrame" class="Profile">
+            <div id="Profile" class="WinFrame">
                 <div id="Header">
-                    <img class="Icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg">
-                    DevHolic.pdf
-                    <button onclick="Exit(this)" id="Close" target=".Profile">.</button>
+                    <img class="Icon" src="PDF_file_icon.svg">
+                    Example1.pdf
+                    <button onclick="Exit(this)" id="Close" target="#Profile">🗙</button>
+                    <button onclick="Full(this)" id="Full" target="#Profile">🗖</button>
+                    <button onclick="Mini(this)" id="Mini" target="#Profile">🗕</button>
                 </div>
-                <div>
-                    
+                <div id="Top"></div>
+                <div id="Left"></div>
+                <div id="Right"></div>
+                <div id="Bottom"></div>
+                <div id="content">
                 </div>
             </div>
 
-            <!-- Projects Folder -->
-            <div id="WinFrame" class="Projects">
+            <!-- Profile 2 -->
+            <div id="Profile2" class="WinFrame">
                 <div id="Header">
-                    <img class="Icon" src="https://upload.wikimedia.org/wikipedia/commons/5/59/OneDrive_Folder_Icon.svg">
-                    Projects
-                    <button onclick="Exit(this)" id="Close" target=".Projects">.</button>
+                    <img class="Icon" src="PDF_file_icon.svg">
+                    Example2.pdf
+                    <button onclick="Exit(this)" id="Close" target="#Profile2">🗙</button>
+                    <button onclick="Full(this)" id="Full" target="#Profile2">🗖</button>
+                    <button onclick="Mini(this)" id="Mini" target="#Profile2">🗕</button>
+                </div>
+                <div id="Top"></div>
+                <div id="Left"></div>
+                <div id="Right"></div>
+                <div id="Bottom"></div>
+                <div id="content">
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div id="Projects" class="WinFrame">
+                <div id="Header">
+                    <img class="Icon" src="Folder_Icon.svg">
+                    ExampleFolder1
+                    <button onclick="Exit(this)" id="Close" target="#Projects">🗙</button>
+                    <button onclick="Full(this)" id="Full" target="#Projects">🗖</button>
+                    <button onclick="Mini(this)" id="Mini" target="#Projects">🗕</button>
+                </div>
+                <div id="Top"></div>
+                <div id="Left"></div>
+                <div id="Right"></div>
+                <div id="Bottom"></div>
+                <div id="content">
                 </div>
             </div>
         </div>
     </body>
     <script src="script.js"></script>
     <script>
+        dragElement(document.getElementById("Profile"));
+        dragElement(document.getElementById("Profile2"));
+        dragElement(document.getElementById("Projects"));
         LoadEffect();
     </script>
 </html>

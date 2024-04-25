@@ -3,6 +3,7 @@ body {
     background: linear-gradient(90deg, rgba(90,137,208,1) 0%, rgba(82,104,200,1) 42%, rgba(82,66,147,1) 100%);
     color: white;
     height: 100%;
+    overflow: hidden;
 }
 
 .__LoadEffect__ {
@@ -49,6 +50,10 @@ body {
       }
 }
 
+.content {
+    padding-top: 2%;
+}
+
 .Applist {
     display: flex;
 }
@@ -88,8 +93,8 @@ body {
     height: 2%;
     position: fixed;
     left: 0px;
-    bottom: 0px;
-    background-color: gray;
+    top: 0px;
+    background-color: #2b2b34;
     padding: 6px;
 }
 
@@ -122,12 +127,10 @@ body {
 
 
 
-#WinFrame {
+.WinFrame {
     display: none;
     position: absolute;
     z-index: 9;
-    background-color: rgba();
-    text-align: center;
     width: 60%;
     background-color: #24252d;
     color: white;
@@ -135,24 +138,31 @@ body {
     transition: opacity 0.2s;
     border-radius: 5px;
     text-align: left;
+    top: 5%;
+    left: 5%;
+}
+
+.WinFrame #content {
+    width: 100%;
+    height: 92%;
 }
   
-#WinFrame #Header {
+.WinFrame #Header {
     padding: 10px;
     z-index: 10;
     color: white;
     cursor: default;
-    text-align: left;
+    text-align: center;
     justify-content: center;
 }
 
-#WinFrame #Header .Icon {
+.WinFrame #Header .Icon {
+    float: left;
     width: 15px;
 }
 
-#WinFrame button {
+.WinFrame button {
     float: right;
-    background-color: transparent;
     border: none;
     color: #191a1f;
     text-align: center;
@@ -162,9 +172,71 @@ body {
     transition: background-color 0.4s;
     border-radius: 30px;
     background-color: #191a1f;
+    font-weight: bold;
+    padding: 2px 4px;
 }
 
-#WinFrame button:hover {
-    background-color: red;
-    color: red;
+.WinFrame #Close:hover {
+    background-color: #d86057;
+    color: black;
+}
+
+.WinFrame #Full:hover {
+    background-color: #e7bb4f;
+    color: black;
+}
+
+.WinFrame #Mini:hover {
+    background-color: #5471e7;
+    color: black;
+}
+
+.WinFrame #Top {
+    width: 100%;
+    height: 1%;
+    background-color: transparent;
+    cursor: row-resize;
+    top: -1px;
+    left: 0px;
+    z-index: 10;
+    position: absolute;
+}
+
+.WinFrame #Bottom {
+    width: 100%;
+    height: 1%;
+    background-color: transparent;
+    cursor: row-resize;
+    bottom: -1px;
+    left: 0px;
+    z-index: 10;
+    position: absolute;
+}
+
+.WinFrame #Left {
+    width: 1%;
+    height: 100%;
+    background-color: transparent;
+    cursor: col-resize;
+    top: 0px;
+    left: -1px;
+    z-index: 10;
+    position: absolute;
+}
+
+.WinFrame #Right {
+    width: 1%;
+    height: 100%;
+    background-color: transparent;
+    cursor: col-resize;
+    top: 0px;
+    right: -1px;
+    z-index: 10;
+    position: absolute;
+}
+
+.viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
