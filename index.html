@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DevHolic</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="__LoadEffect__" style="display: none;">
+            <pre id="__LoadEffectText">
+                Timestamp: 2024-04-24 21:15:37
+                Severity: High
+                Component: Network Intrusion Detection System
+                
+                ALERT! Unauthorized Network Access Detected
+                
+                Description: A breach in the network's perimeter has been flagged by our vigilant Intrusion Detection System (IDS). An unidentified entity has successfully penetrated our defenses and gained unauthorized access to the inner sanctum of our network infrastructure.
+                The breach was stealthily executed under the cover of darkness, reminiscent of a digital ninja slipping past our digital fortress.
+                
+                Further Analysis:
+                - Entry Point: Exploitation of a zero-day vulnerability in the web application firewall (WAF), bypassing its defenses like a skilled lockpicker maneuvering past intricate tumblers.
+                - Traffic Analysis: Anomalous network traffic observed, resembling the clandestine whispers of an undercover operative passing coded messages through encrypted channels.
+                - Potential Objective: Espionage, data theft, or sabotage. The intruder's intentions remain shrouded in mystery, lurking in the shadows like a cyber-phantom haunting our digital corridors.
+                
+                Action Taken:
+                1. Immediate Isolation: Segregation of compromised systems from the rest of the network, creating a virtual quarantine zone to contain the breach and prevent further contamination.
+                2. Intensified Monitoring: Heightened surveillance and real-time monitoring deployed across critical network segments, with cyber sentinels standing ready to intercept any further intrusion attempts.
+                3. Countermeasures Engaged: Intruder detection algorithms activated, akin to unleashing cyber-hounds to sniff out the scent of the trespasser and thwart their advance.
+                
+                Incident Response Steps:
+                - Forensic Investigation: Digital sleuths dispatched to dissect the breach, meticulously tracing the intruder's footsteps through log files, packet captures, and forensic artifacts.
+                - Vulnerability Patching: Swift remediation of the exploited vulnerability, fortifying our defenses and sealing the breach like skilled craftsmen mending a crack in the walls of a medieval castle.
+                - Threat Intelligence Gathering: Collaboration with cybersecurity experts and threat intelligence analysts to profile the attacker and uncover their modus operandi, transforming our network into an impregnable fortress guarded by the wisdom of the ancients.
+                
+                Affected Systems:
+                - Web servers, database clusters, and application servers residing within the breached network segment, now under lockdown to prevent further compromise.
+                - Endpoints and user devices potentially exposed to the infiltrator's reach, requiring thorough inspection and remediation to purge any lurking threats.
+                
+                Recommendation:
+                - Continuous Vigilance: Eternal vigilance is the price of cybersecurity. Maintain a proactive stance against evolving threats, with constant monitoring and regular security assessments.
+                - Adaptive Defense: Embrace a strategy of adaptive defense, blending proactive prevention with rapid detection and response capabilities, ensuring swift and decisive action against any incursion.
+                - Knowledge Sharing: Foster a culture of cybersecurity awareness and knowledge sharing, empowering every member of the organization to serve as a sentinel in our collective defense against digital adversaries.
+                
+                Status: The hunt is on! Our cyber hunters are hot on the trail of the elusive intruder, tracking their digital footprints through the labyrinthine corridors of our network. Updates will follow as the investigation progresses, bringing us one step closer to unmasking the shadowy figure lurking in the darkness of cyberspace.
+            
+                [+] Access Complete.
+            </pre>
+            <center>
+                <h1 id="__LoadEffectText2" class="neon" style="display: none;">Web DevOS 1.8.3</h1>
+            </center>
+        </div>
+        <div class="content">
+            <div class="taskbar">
+                <a class="neon" style="font-size: 15px;">Web DevOS 1.8.3 By Ace (NEXA - DevHolic)</a>
+            </div>
+            <!-- Line 1 -->
+            <div class="Applist">
+                <div class="DesktopApp" onclick="Open(this)" target=".Profile">
+                    <img class="Icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg">
+                    <p class="Appname">DevHolic.pdf</p>
+                </div>
+            </div>
+
+            <!-- Line 2 -->
+            <div class="Applist">
+                <div class="DesktopApp"  onclick="Open(this)" target=".Projects">
+                    <img class="Icon" src="https://upload.wikimedia.org/wikipedia/commons/5/59/OneDrive_Folder_Icon.svg">
+                    <p class="Appname">Projects</p>
+                </div>
+            </div>
+
+            <!-- Line 3 -->
+            <div class="Applist">
+                <div class="DesktopApp">
+                    <img class="Icon" src="https://upload.wikimedia.org/wikipedia/commons/5/59/OneDrive_Folder_Icon.svg">
+                    <p class="Appname">Informations</p>
+                </div>
+            </div>
+
+            <!-- Profile -->
+            <div id="WinFrame" class="Profile">
+                <div id="Header">
+                    <img class="Icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg">
+                    DevHolic.pdf
+                    <button onclick="Exit(this)" id="Close" target=".Profile">.</button>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+
+            <!-- Projects Folder -->
+            <div id="WinFrame" class="Projects">
+                <div id="Header">
+                    <img class="Icon" src="https://upload.wikimedia.org/wikipedia/commons/5/59/OneDrive_Folder_Icon.svg">
+                    Projects
+                    <button onclick="Exit(this)" id="Close" target=".Projects">.</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    <script>
+        LoadEffect();
+    </script>
+</html>
