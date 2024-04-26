@@ -5,7 +5,7 @@ Welcome to Web-DevOS, a Linux-inspired Web Development Operating System built wi
 ## Features
 
 - **File System:** You can create folders, files, and others. (Example: PDF)
-- **Window Frame Control** You can resize or drag your frames with your mouse.
+- **Window Frame Control:** You can resize or drag your frames with your mouse.
 - **Linux Design:** Enjoy a sleek and minimalist design inspired by Linux distributions.
 
 ## Installation
